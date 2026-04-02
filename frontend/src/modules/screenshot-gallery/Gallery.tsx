@@ -13,6 +13,22 @@ type ImageSize = 480 | 720 | 1080;
 const imageSizes: ImageSize[] = [480, 720, 1080];
 
 /**
+ * Maps image size values to human-readable labels
+ * @param size - The image size in pixels
+ * @returns User-friendly label for the size
+ */
+function getSizeLabel(size: ImageSize): string {
+  switch (size) {
+    case 480:
+      return 'small';
+    case 720:
+      return 'medium';
+    case 1080:
+      return 'large';
+  }
+}
+
+/**
  * Returns the API path for a screenshot at the requested size
  * @param screenshot - The screenshot file name
  * @param size - The desired width variant
@@ -93,7 +109,7 @@ function Gallery() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {size}px
+                        {getSizeLabel(size)}
                       </a>
                     ))}
                   </div>
