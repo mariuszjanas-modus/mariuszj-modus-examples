@@ -1,4 +1,4 @@
-# Screenshot App Demo
+# Screenshot App Training Demo
 
 This repository is a small fullstack TypeScript demo for managing and browsing game screenshots.
 
