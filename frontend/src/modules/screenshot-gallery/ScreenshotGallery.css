@@ -1,0 +1,40 @@
+.module-page {
+  width: 100%;
+}
+
+.module-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.75rem 1rem;
+  padding-right: 4rem;
+  background: var(--color-header-bg);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-header-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.module-header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  padding: 0;
+  text-shadow: none;
+}
+
+.module-back-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.module-back-link:hover {
+  color: var(--color-accent-hover);
+}

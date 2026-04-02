@@ -1,0 +1,5 @@
+.App {
+  min-height: 100vh;
+  background: var(--color-app-bg);
+  transition: background 0.25s ease;
+}

@@ -1,0 +1,73 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Light theme tokens */
+  --color-text-primary: #1a2332;
+  --color-text-secondary: #556070;
+  --color-accent: #4a6fa5;
+  --color-accent-hover: #17324d;
+  --color-app-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --color-card-bg: rgba(255, 255, 255, 0.75);
+  --color-card-bg-hover: rgba(255, 255, 255, 0.95);
+  --color-card-border: rgba(0, 0, 0, 0.08);
+  --color-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --color-card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --color-header-bg: rgba(255, 255, 255, 0.6);
+  --color-header-border: rgba(0, 0, 0, 0.08);
+  --color-gallery-item-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --color-gallery-item-shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.15);
+  --color-overlay-bg: linear-gradient(to top, rgba(14, 19, 24, 0.92), rgba(14, 19, 24, 0.2));
+  --color-overlay-text: #f5f7fa;
+  --color-overlay-pill-bg: rgba(255, 255, 255, 0.92);
+  --color-overlay-pill-bg-hover: #ffffff;
+  --color-overlay-pill-text: #17324d;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Dark theme overrides */
+  --color-text-primary: #e6eaf0;
+  --color-text-secondary: #8b9ab0;
+  --color-accent: #6fa3d8;
+  --color-accent-hover: #a8c8ef;
+  --color-app-bg: linear-gradient(135deg, #0d1117 0%, #1c2436 100%);
+  --color-card-bg: rgba(255, 255, 255, 0.06);
+  --color-card-bg-hover: rgba(255, 255, 255, 0.12);
+  --color-card-border: rgba(255, 255, 255, 0.1);
+  --color-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --color-card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --color-header-bg: rgba(13, 17, 23, 0.85);
+  --color-header-border: rgba(255, 255, 255, 0.08);
+  --color-gallery-item-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+  --color-gallery-item-shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.5);
+  --color-overlay-bg: linear-gradient(to top, rgba(6, 9, 14, 0.96), rgba(6, 9, 14, 0.3));
+  --color-overlay-text: #e6eaf0;
+  --color-overlay-pill-bg: rgba(230, 234, 240, 0.18);
+  --color-overlay-pill-bg-hover: rgba(230, 234, 240, 0.28);
+  --color-overlay-pill-text: #e6eaf0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-text-primary);
+  transition: color 0.25s ease;
+}
+
+#root {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}

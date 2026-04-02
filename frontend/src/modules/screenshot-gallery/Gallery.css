@@ -1,0 +1,131 @@
+.gallery-container {
+  padding: 0 1rem 1rem;
+}
+
+.gallery-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+  font-size: 2rem;
+}
+
+.gallery-intro {
+  margin: 0 auto 2rem;
+  max-width: 42rem;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--color-gallery-item-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--color-gallery-item-shadow-hover);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-figure {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--color-overlay-bg);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.gallery-item:hover .gallery-overlay,
+.gallery-item:focus-within .gallery-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-overlay-label {
+  color: var(--color-overlay-text);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.gallery-size-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.gallery-size-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background-color: var(--color-overlay-pill-bg);
+  color: var(--color-overlay-pill-text);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-size-link:hover,
+.gallery-size-link:focus-visible {
+  background-color: var(--color-overlay-pill-bg-hover);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .gallery-overlay {
+    opacity: 1;
+    transform: none;
+  }
+}

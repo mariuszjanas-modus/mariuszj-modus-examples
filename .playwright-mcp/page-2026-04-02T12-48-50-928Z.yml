@@ -1,0 +1,16 @@
+- generic [ref=e3]:
+  - button "Switch to dark mode" [ref=e4] [cursor=pointer]:
+    - generic [ref=e5]: 🌙
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - heading "Copilot Demo" [level=1] [ref=e8]
+      - paragraph [ref=e9]: Select a module to explore
+    - main [ref=e10]:
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "Screenshot Gallery Browse game screenshots in 480px, 720px, and 1080px. Demonstrates a fullstack image pipeline using a custom Copilot prompt and image-conversion skill. Open →" [ref=e13] [cursor=pointer]:
+            - /url: /screenshot-gallery
+            - generic [ref=e14]: 🖼️
+            - heading "Screenshot Gallery" [level=2] [ref=e15]
+            - paragraph [ref=e16]: Browse game screenshots in 480px, 720px, and 1080px. Demonstrates a fullstack image pipeline using a custom Copilot prompt and image-conversion skill.
+            - generic [ref=e17]: Open →
